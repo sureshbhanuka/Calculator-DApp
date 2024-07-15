@@ -3,7 +3,7 @@ const walletAddressElement = document.getElementById('walletAddress');
         const resultElement = document.getElementById('result');
         let accounts = [];
 
-        // Contract ABI and Address (replace with your deployed contract's ABI and address)
+        // Contract ABI and Address 
         const contractABI = [
 	{
 		"inputs": [
@@ -116,7 +116,7 @@ const walletAddressElement = document.getElementById('walletAddress');
 		"type": "event"
 	}
 ];
-        const contractAddress = '0xc6359D6Eb37DBaC510d090B7c7AF583b0877E804'; // Replace with your deployed contract address
+        const contractAddress = '0xc6359D6Eb37DBaC510d090B7c7AF583b0877E804'; //deployed contract address
 
         // Web3 instance and contract
         const web3 = new Web3(window.ethereum);
