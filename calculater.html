@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator DApp</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+    <div class="main">
+        
+        <div class="CalcFrame">
+            <div class="H1"> 
+                
+                <h1>Calculator DApp</h1> 
+            
+            </div>
+
+            <div id="walletStatus" class="walletStatus">
+
+                <p id="walletAddress">MetaMask not connected</p>
+                <button onclick="connectWallet()">Connect Wallet</button>
+            
+            </div>
+
+            <br><br>
+
+            <div class="H1">
+                <label for="num1">Number 1:</label>
+                <input type="number" id="num1">
+                <br><br>
+                <label for="num2">Number 2:</label>
+                <input type="number" id="num2">
+            </div>
+            <div class="head">    
+                
+                <button onclick="add()" class="btn">Add</button>
+                <br><br>
+
+                
+                <button onclick="subtract()" class="btn">Subtract</button>
+                <br><br>
+
+            </div>     
+                <p>Result: <span id="result"></span></p>
+                <p id="statusMessage"></p>
+               
+            
+
+        </div>
+    </div>
+
+</div>
+
+    <script src="calc.js"></script>
+</body>
+</html>
